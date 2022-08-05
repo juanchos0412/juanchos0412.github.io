@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Juan Sebastián Valderrama Dueñas">
+    <title>Juan Valderrama</title>
+    <link rel="icon" href="src/icono.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/other.css">
+  </head>
+  <body class="container-fluid p-0">
+
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+        <img class="logo-carga" src="src/logo.svg" alt="Juan Valderrama">
+    </div>
+
+    <video src="src/video.mp4" autoplay loop muted poster="src/fondo.jpeg" id="video-banner"></video>
+
+    <header class="d-flex container-fluid p-0 header flex-column seccion" style="height: 100vh;" id="inicio">
+        <nav class="container navbar navbar-expand-lg navbar-dark main-menu" aria-label="Offcanvas navbar large">
+            <div class="container-fluid menu-pegajoso">
+              <a class="navbar-brand" href="/">
+                  <img class="logo-default" src="src/logo.svg" alt="Juan Valderrama" style="max-height: 70px;">
+                  <img class="logo-pegajoso" src="src/simpleLogo.svg" alt="Juan Valderrama" style="max-height: 70px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar"><i class="bi bi-list" style="font-size: 40px;"></i></span>
+              </button>
+              <div class="offcanvas offcanvas-end bg-info" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <img src="src/logo.svg" alt="Juan Valderrama" style="max-width: 80%; margin: auto;">
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-white text-center menu" id="menu-inicio">
+                    <li class="nav-item text-white text-center">
+                      <a class="nav-link text-white text-center fw-0" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item text-white text-center">
+                      <a class="nav-link fw-0 text-white text-center" href="#acercaDe">Acerca de</a>
+                    </li>
+                    <li class="nav-item text-white text-center">
+                        <a class="nav-link fw-0 text-white text-center" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item text-white text-center">
+                        <a class="nav-link fw-0 text-white text-center" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item text-white text-center seccion-disabled">
+                        <a class="nav-link fw-0 text-white text-center" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item text-white text-center">
+                        <a class="nav-link fw-0 text-white text-center" href="#contacto">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu-cerrar" style="width: 100%; padding: 2em; background-color: var(--primary);">
+                    <button type="button" class="btn-close text-center" data-bs-dismiss="offcanvas" aria-label="Close">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-center titles-header flex-column justify-content-center align-content-center h-100"  data-aos="fade-up" data-aos-duration="2000">
+            <h2 class="text-white text-big text-center pb-3 h1-header"><i>Soy <span class="text-primary">Juan</span> Valderrama</i></h2>
+            <div class="contenedor p-header">
+                <ul class="fs-3 text-white text-center">
+                    <li>Desarrollador Web</li>
+                    <li>Desarrollador UI/UX</li>
+                    <li>Desarrollador Frontend</li>
+                </ul>             
+            </div>
+
+            <ul class="buttons-header nav nav-pills text-white justify-content-center pt-3">
+                <li class="nav-item p-0 mx-2">
+                    <a href="https://www.linkedin.com/in/juan-sebastian-due%C3%B1as-3a5490199/" class="nav-link text-white fs-5" target="_blank">
+                        <i class="icono fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="nav-item p-0 mx-2">
+                    <a href="https://github.com/juanchos0412" class="nav-link text-white fs-5" target="_blank">
+                        <i class="icono fab fa-github-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex justify-content-center boton-continue flex-column justify-content-center align-content-center">
+            <p class="m-auto text-center"><i class="chevron bottom"></i><a href="#acercaDe" class="nav-link text-white fs-6 text-center text-scroll">ACERCA DE</a></p>
+        </div>
+    </header>
+
+
+
+    <main class="seccion" id="acercaDe">
+        <div class="d-flex container-fluid about">
+            <div class="col-lg-4 bg-primary d-flex justify-content-end align-content-center m-0 col-1-about" style="padding: 100px 0;" data-aos="fade-right" data-aos-duration="1000">
+                <video src="src/about.mp4" class="img-about" alt="about" style="width: 450px; height: 600px; object-fit: cover;" autoplay loop muted ></video>
+            </div>
+            <div class="col-lg-8 info-about col-2-about"  data-aos="fade-up" data-aos-duration="1000">
+                <h1>
+                    <span class="title-about text-info pb-0 fw-2">Juan Valderrama</span>
+                <!-- <hr class="p-0 m-0 separador separador-title border border-primary"> -->
+                    <p class="subtitle-about text-info pb-4 fw-2" style="font-size: 18px;">Ingeniero de <span class="text-primary">Software</span></p>
+                </h1>
+                <p class="text-info fw-0">Soy un desarrollador web frontend nacido en Colombia y construyo sitios web con diseños profesionales que cumplan con las últimas tendencias en diseño y desarrollo Web. <!--Ayudo a convertir una visión y una idea en productos significativos y útiles. Tener un buen ojo para la evolución del producto me ayuda a priorizar las tareas, iterar rápidamente y entregar más rápido.--></p>
+                <hr class="separador text-primary border border-primary">
+                <div class="row pb-4">
+                    <div class="">
+                        <p class="fw-0"><strong class="pr-3 fw-3">Nombre:</strong> Juan Sebastian Valderrama Dueñas</p>
+                        <p class="fw-0"><strong class="pr-3 fw-3">Nacido en: </strong>Duitama, Boyacá - Colombia</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center align-content-center align-items-center">
+                    <div class="col-lg-3 boton-about">
+                        <button type="button" class="btn button-primary">Descargar CV</button>
+                    </div>
+
+                    <hr class="col-lg-1 border-black p-0 m-0 separador-cv">
+
+                    <div class="col-lg-8 social-about">
+                        <ul class="buttons-about nav nav-pills text-white justify-content-start align-content-center align-items-center">
+                            <li class="nav-item p-0">
+                                <a href="https://www.linkedin.com/in/juan-sebastian-due%C3%B1as-3a5490199/" class="nav-link text-white fs-5" target="_blank">
+                                    <i class="icono fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item p-0">
+                                <a href="https://github.com/juanchos0412" class="nav-link text-white fs-5" target="_blank">
+                                    <i class="icono fab fa-github-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="servicios" class="bg-secondary seccion">
+        <div class="services container" style="padding: 6em 0 6em;">
+            <div class="text-center" style="padding-bottom: 4em;">
+                <h1 class="text-info title-about fw-2">Servicios</h1>
+                <hr class="separador text-primary border border-primary mb-4" style="width: 10%; margin: auto;">
+                <p style="width: 50%; margin: auto;" class="fw-0">Diseño y desarrollo sitios con enfoque profesional, diseños agradables y buenas técnicas de desarrollo Web.</p>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-sm-6 col-lg-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="bg-white card-service">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 1550 1550" style="enable-background:new 0 0 512 512; height: 60px; width: auto;" xml:space="preserve" class="">
+                                <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <path d="m957.3 1087.1h-604.9c-11.6 0-21-9.4-21-21s9.4-21 21-21h604.9c11.6 0 21 9.4 21 21s-9.5 21-21 21z" fill="#000000" data-original="#000000" class="">
+
+                                                            </path>
+                                                        </g>
+                                                        <g>
+                                                            <path d="m138.4 722c-11.6 0-21-9.4-21-21v-391.6c0-41.1 33.5-74.6 74.6-74.6h1060.3c41.1 0 74.6 33.5 74.6 74.6v239c0 11.6-9.4 21-21 21s-21-9.4-21-21v-239c0-18-14.6-32.6-32.6-32.6h-1060.3c-18 0-32.6 14.6-32.6 32.6v391.6c0 11.6-9.4 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                        </g>
+                                                        <g>
+                                                            <path d="m957.3 908.2h-604.9c-11.6 0-21-9.4-21-21s9.4-21 21-21h604.9c11.6 0 21 9.4 21 21s-9.5 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                        </g>
+                                                        <g>
+                                                            <circle cx="722.1" cy="976.6" r="25.9" fill="#000000" data-original="#000000" class=""></circle>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <path d="m636.1 1201.7c-11.6 0-21-9.4-21-21v-114.6c0-11.6 9.4-21 21-21s21 9.4 21 21v114.6c0 11.6-9.4 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                        </g>
+                                                        <g>
+                                                            <path d="m808.2 1201.7c-11.6 0-21-9.4-21-21v-114.6c0-11.6 9.4-21 21-21s21 9.4 21 21v114.6c0 11.6-9.4 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <path d="m977.3 1315.1h-557.4c-11.6 0-21-9.4-21-21v-13.4c0-63.3 51.5-114.8 114.8-114.8h417c11.1 0 22.1 1.6 32.6 4.7 11.1 3.3 17.5 15 14.2 26.1s-15 17.5-26.1 14.2c-6.7-2-13.6-3-20.7-3h-417c-37.6 0-68.6 28.6-72.4 65.2h536c11.6 0 21 9.4 21 21s-9.4 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <path d="m336.5 1315.1h-289.6c-20.4 0-36.9-16.6-36.9-36.9v-561.3c0-20.4 16.6-36.9 36.9-36.9h289.5c20.4 0 36.9 16.6 36.9 36.9v561.2c.1 20.5-16.5 37-36.8 37zm-284.5-42h279.4v-551.1h-279.4z" fill="#000000" data-original="#000000" class=""></path>
+                                                        </g>
+                                                        <g>
+                                                            <g>
+                                                                <path d="m352.4 808.5h-321.4c-11.6 0-21-9.4-21-21s9.4-21 21-21h321.4c11.6 0 21 9.4 21 21s-9.4 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                            </g>
+                                                            <g>
+                                                                <path d="m352.4 1228.6h-321.4c-11.6 0-21-9.4-21-21s9.4-21 21-21h321.4c11.6 0 21 9.4 21 21s-9.4 21-21 21z" fill="#000000" data-original="#000000" class=""></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="m1499 1315.1h-521.7c-22.6 0-41-18.4-41-41v-705.6c0-22.6 18.4-41 41-41h521.7c22.6 0 41 18.4 41 41v705.6c0 22.6-18.4 41-41 41zm-520.7-42h519.7v-703.7h-519.8v703.7z" fill="#000000" data-original="#000000" class=""></path>
+                                            </g>
+                                            <g>
+                                                <path d="m1449 1204h-421.8c-11.6 0-21-9.4-21-21v-564.6c0-11.6 9.4-21 21-21h421.8c11.6 0 21 9.4 21 21v564.6c0 11.6-9.4 21-21 21zm-400.7-42h379.7v-522.6h-379.8v522.6z" fill="#000000" data-original="#000000" class=""></path>
+                                            </g>
+                                            <g>
+                                                <circle cx="1238.1" cy="1238.6" r="19.9" fill="#000000" data-original="#000000" class=""></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h6><span>01.</span> DISEÑO RESPONSIVE</h6>
+                        <h5 class="fw-2">Diseño adaptado a dispositivos móviles.</h5>
+                        <p class="fw-0">Desarrollo de sitios con adaptabilidad para variedad de dispositivos, ya sea celulares, tabletas o computadores de escritorio.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="bg-white card-service">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 72 72" style="enable-background:new 0 0 512 512; height: 60px; width: auto;" xml:space="preserve" class="">
+                                <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m42.97 18.19c2.52 0 4.57-2.05 4.57-4.57s-2.05-4.57-4.57-4.57-4.57 2.05-4.57 4.57 2.05 4.57 4.57 4.57zm0-7.64c1.69 0 3.07 1.38 3.07 3.07s-1.38 3.07-3.07 3.07-3.07-1.38-3.07-3.07 1.38-3.07 3.07-3.07z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m10.09 28.5-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m14.36 28.5-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m18.63 28.5-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m22.91 28.5-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m27.18 28.5-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m31.45 28.5-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m10.09 33.37-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06-.3-.3-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m14.36 33.37-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m18.63 33.37-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06-.29-.3-.76-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m22.91 33.37-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06-.3-.3-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m27.18 33.37-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path><path d="m31.45 33.37-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06-.29-.3-.76-.3-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m10.09 47.42-1.29 1.29c-.3.29-.3.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m14.36 47.42-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m18.63 47.42-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m22.91 47.42-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m27.18 47.42-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m31.45 47.42-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m10.09 52.29-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m14.36 52.29-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m18.63 52.29-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m22.91 52.29-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m27.18 52.29-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m31.45 52.29-1.29 1.29c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.76-.29-1.06 0z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m9.33 12.15c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.33.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m13.6 12.15c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m17.87 12.15c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.15.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m22.15 12.15c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.33.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m26.42 12.15c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m30.69 12.15c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.15.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m11.15 14.44c-.29-.29-.77-.29-1.06 0l-1.29 1.3c-.29.29-.29.77 0 1.06.15.15.34.22.53.22s.38-.07.53-.22l1.29-1.29c.29-.3.29-.77 0-1.07z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m13.6 17.02c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m17.87 17.02c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.15.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m22.15 17.02c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.33.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m26.42 17.02c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.14.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m30.69 17.02c.19 0 .38-.07.53-.22l1.29-1.29c.29-.29.29-.77 0-1.06s-.77-.29-1.06 0l-1.29 1.29c-.29.29-.29.77 0 1.06.15.14.34.22.53.22z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m42.97 37.11c2.52 0 4.57-2.05 4.57-4.57s-2.05-4.57-4.57-4.57-4.57 2.05-4.57 4.57 2.05 4.57 4.57 4.57zm0-7.64c1.69 0 3.07 1.38 3.07 3.07s-1.38 3.07-3.07 3.07-3.07-1.38-3.07-3.07 1.38-3.07 3.07-3.07z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m63.29 41.37c-.02-.02-.03-.04-.05-.05-2.7-3.17-6.52-5.1-10.64-5.44v-9.6c0-1.36-1.11-2.47-2.48-2.47h-2.54v-2.31h2.54c1.37 0 2.48-1.11 2.48-2.48v-11.66c0-1.37-1.11-2.48-2.48-2.48h-43.39c-1.37 0-2.48 1.11-2.48 2.48v11.65c0 1.37 1.11 2.48 2.48 2.48h2.54v2.31h-2.54c-1.37 0-2.48 1.11-2.48 2.47v11.66c0 1.37 1.11 2.48 2.48 2.48h2.54v2.32h-2.54c-1.37 0-2.48 1.11-2.48 2.48v11.65c0 1.37 1.11 2.49 2.48 2.49h31.08c1.6 2.74 4.01 4.99 7 6.36.56.26 1.16.5 1.77.69 1.53.48 3.12.73 4.74.73 1.76 0 3.48-.29 5.12-.86h.01c.81-.28 1.62-.64 2.4-1.06.02-.01.05-.03.07-.04 4.96-2.77 8.05-8 8.05-13.68 0-2.98-.84-5.88-2.43-8.38-.36-.61-.79-1.19-1.25-1.74zm-5.41 22.63c-.4.21-.81.4-1.23.56l-6.59-18.42h2.95l3.84 12.66c.1.32.39.53.72.53h.01c.33 0 .62-.22.71-.54l2.68-9.34c.06-.22.02-.46-.11-.65-.6-.83-2.06-3.32-1.6-4.83.23-.75.7-1.31 1.34-1.57.53-.22 1.12-.19 1.65.05.35.42.67.86.96 1.31.45 2.16-.79 5.77-.81 5.83zm-11.54.69c-.2-.08-.41-.15-.61-.24l-6.16-19.4h2.63l5.34 15.93zm1.96-6.17-4.51-13.47h.37c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-1.41-3.16c2.62-3.88 7-6.24 11.73-6.24 3.47 0 6.77 1.28 9.33 3.54-.21.04-.42.1-.63.18-1.06.43-1.84 1.33-2.2 2.52-.66 2.15.98 4.89 1.61 5.84l-1.88 6.55-2.97-9.8h.35c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-7.18c-.41 0-.75.34-.75.75s.34.75.75.75h.73l1.95 5.45zm-42.55-39.51v-11.65c0-.54.44-.98.98-.98h43.4c.54 0 .98.44.98.98v11.65c0 .54-.44.98-.98.98h-43.4c-.54 0-.98-.44-.98-.98zm5.01 2.48h35.32v2.31h-35.32zm-5.01 16.45v-11.66c0-.54.44-.97.98-.97h3.27.01s.01 0 .01 0h36.8.01s.01 0 .01 0h3.28c.54 0 .98.44.98.97v9.54c-3.35.05-6.52 1.16-9.12 3.1h-35.25c-.54-.01-.98-.45-.98-.98zm5.01 2.47h29.47c-.7.7-1.34 1.48-1.91 2.32h-27.56zm-4.03 17.43c-.54 0-.98-.44-.98-.99v-11.64c0-.54.44-.98.98-.98h30.71c-1.16 2.22-1.77 4.71-1.77 7.23 0 2.24.49 4.4 1.37 6.38zm30.43-6.38c0-1.9.4-3.77 1.13-5.5l5.56 17.52c-4.11-2.56-6.69-7.1-6.69-12.02zm10.6 13.7 1.28-3.95v-.01l2.21-7.23 3.97 11.09c-2.41.69-5.02.72-7.46.1zm12.08-2.4 3.98-12.69c.04-.1.56-1.63.83-3.39.55 1.52.83 3.13.83 4.78 0 4.48-2.12 8.65-5.64 11.3z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m67.68 40.27c-2.11-4.68-6.11-6.8-9.08-7.75-.4-.13-.82.09-.94.49-.13.39.09.82.49.94 2.69.86 6.29 2.76 8.17 6.94.13.28.4.44.68.44.1 0 .21-.02.31-.07.38-.17.54-.61.37-.99z" fill="#000000" data-original="#000000" class=""></path>
+                                        <path d="m55.07 33.29c.02 0 .33.03.85.11.04.01.08.01.13.01.36 0 .68-.26.74-.63.07-.41-.21-.8-.62-.86-.63-.11-1-.13-1-.13-.41-.04-.77.28-.8.7-.02.41.29.77.7.8z" fill="#000000" data-original="#000000" class=""></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h6><span>02.</span> Sitios Web en WordPress</h6>
+                        <h5 class="fw-2">Diseño y desarrollo de sitios en Wordpress.</h5>
+                        <p class="fw-0">Sitios web modernos y rápidos, con enfoque profesional, usando el gestor de contenidos más popular de la web.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">
+                    <div class="bg-white card-service">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.999 511" style="enable-background:new 0 0 512 512; height: 60px; width: auto;" xml:space="preserve" class="">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m92.308594 52.730469c0-13.871094-11.28125-25.152344-25.152344-25.152344s-25.15625 11.28125-25.15625 25.152344c0 13.871093 11.285156 25.152343 25.15625 25.152343 13.867188 0 25.152344-11.28125 25.152344-25.152343zm-35.308594 0c0-5.597657 4.558594-10.152344 10.15625-10.152344s10.152344 4.554687 10.152344 10.152344c0 5.597656-4.554688 10.152343-10.152344 10.152343s-10.15625-4.554687-10.15625-10.152343zm0 0" fill="#000000" data-original="#000000" class=""></path>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m126.914062 77.882812c13.871094 0 25.15625-11.28125 25.15625-25.152343 0-13.871094-11.285156-25.152344-25.15625-25.152344-13.871093 0-25.152343 11.28125-25.152343 25.152344 0 13.871093 11.28125 25.152343 25.152343 25.152343zm0-35.304687c5.601563 0 10.15625 4.554687 10.15625 10.152344 0 5.597656-4.558593 10.152343-10.15625 10.152343-5.597656 0-10.152343-4.554687-10.152343-10.152343 0-5.597657 4.554687-10.152344 10.152343-10.152344zm0 0" fill="#000000" data-original="#000000" class=""></path>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m186.675781 77.882812c13.867188 0 25.152344-11.28125 25.152344-25.152343 0-13.871094-11.285156-25.152344-25.152344-25.152344-13.871093 0-25.15625 11.28125-25.15625 25.152344 0 13.871093 11.285157 25.152343 25.15625 25.152343zm0-35.304687c5.597657 0 10.152344 4.554687 10.152344 10.152344 0 5.597656-4.554687 10.152343-10.152344 10.152343-5.601562 0-10.15625-4.554687-10.15625-10.152343 0-5.597657 4.554688-10.152344 10.15625-10.152344zm0 0" fill="#000000" data-original="#000000" class=""></path>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m269.667969 60.230469h182.664062c4.144531 0 7.5-3.355469 7.5-7.5s-3.355469-7.5-7.5-7.5h-182.664062c-4.144531 0-7.5 3.355469-7.5 7.5s3.355469 7.5 7.5 7.5zm0 0" fill="#000000" data-original="#000000" class=""></path>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m480.683594.5h-449.367188c-17.265625 0-31.316406 14.046875-31.316406 31.316406v417.25c0 17.265625 14.050781 31.316406 31.316406 31.316406h449.367188c17.265625 0 31.316406-14.050781 31.316406-31.316406v-417.25c0-17.269531-14.050781-31.316406-31.316406-31.316406zm0 464.882812h-449.367188c-8.996094 0-16.316406-7.320312-16.316406-16.316406v-344.105468h41.808594c4.144531 0 7.5-3.355469 7.5-7.5 0-4.140626-3.355469-7.5-7.5-7.5h-41.808594v-58.144532c0-8.996094 7.320312-16.316406 16.316406-16.316406h449.367188c8.996094 0 16.316406 7.320312 16.316406 16.316406v58.144532h-412.191406c-4.140625 0-7.5 3.359374-7.5 7.5 0 4.144531 3.359375 7.5 7.5 7.5h412.191406v344.105468c0 8.996094-7.320312 16.316406-16.316406 16.316406zm0 0" fill="#000000" data-original="#000000" class=""></path>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m424.402344 123.660156h-65.546875c-13.09375 0-23.746094 10.652344-23.746094 23.746094v9.074219c-7.691406 2.441406-13.773437 8.527343-16.207031 16.222656l-117.144532.441406c-2.441406-7.671875-8.515624-13.738281-16.191406-16.175781v-9.070312c0-13.09375-10.652344-23.746094-23.746094-23.746094h-65.542968c-13.09375 0-23.746094 10.652344-23.746094 23.746094v65.542968c0 13.09375 10.652344 23.742188 23.746094 23.742188h9.070312c2.4375 7.6875 8.515625 13.765625 16.203125 16.203125v30.644531c0 15.8125 12.863281 28.675781 28.675781 28.675781h70.648438c2.4375 7.683594 8.515625 13.761719 16.199219 16.199219v9.589844c0 12.808594 10.421875 23.230468 23.230469 23.230468h10.160156c2.15625 7.515626 7.773437 13.578126 15.007812 16.355469-2.15625 4.296875-6.601562 7.25-11.722656 7.25h-80.109375c-1.941406-8.644531-8.398437-15.597656-16.75-18.25v-9.074219c0-13.09375-10.652344-23.746093-23.746094-23.746093h-65.546875c-13.089844 0-23.742187 10.652343-23.742187 23.746093v65.546876c0 13.09375 10.652343 23.742187 23.742187 23.742187h65.546875c13.09375 0 23.746094-10.648437 23.746094-23.742187v-9.074219c6.984375-2.21875 12.644531-7.441407 15.445313-14.148438h81.414062c13.234375 0 24.363281-9.195312 27.332031-21.53125 8.265625-2.324219 14.800781-8.828125 17.171875-17.074219h8.625c12.8125 0 23.230469-10.421874 23.230469-23.230468v-19.730469c0-4.144531-3.355469-7.5-7.5-7.5-4.140625 0-7.5 3.355469-7.5 7.5v19.730469c0 4.539062-3.691406 8.230468-8.230469 8.230468h-9.035156c-7.796875-22.375-39.273438-22.199218-46.972656 0h-10.566406c-4.539063 0-8.230469-3.691406-8.230469-8.230468v-9.589844c1.601562-.507812 3.113281-1.160156 4.589843-1.984375.105469-.105469 12.765626-6.5 12.765626-21.714844 0-10.777343-6.984376-20.390625-17.355469-23.699219v-9.585937c0-4.539063 3.691406-8.230469 8.230469-8.230469h66.574218c4.539063 0 8.230469 3.691406 8.230469 8.230469v19.730469c0 4.140625 3.359375 7.5 7.5 7.5 4.144531 0 7.5-3.359375 7.5-7.5v-19.730469c0-12.808594-10.421875-23.230469-23.230469-23.230469h-66.574218c-12.808594 0-23.230469 10.421875-23.230469 23.230469v9.585937c-7.683594 2.4375-13.761719 8.515626-16.199219 16.199219h-70.644531c-7.542969 0-13.679688-6.136719-13.679688-13.675781v-30.644531c7.683594-2.4375 13.761719-8.515625 16.199219-16.203125h9.074219c13.089843 0 23.742187-10.648438 23.742187-23.742188v-9.074218c7.695313-2.441407 13.777344-8.527344 16.207032-16.222657l117.144531-.441406c2.441406 7.671875 8.515625 13.742187 16.191406 16.175781v9.074219c0 13.09375 10.652344 23.746094 23.746094 23.746094h65.546875c13.089844 0 23.742187-10.652344 23.742187-23.746094v-65.546875c0-13.09375-10.652343-23.746094-23.742187-23.746094zm-255.011719 276.976563c-5.4375 0-9.855469-4.421875-9.855469-9.855469s4.421875-9.855469 9.855469-9.855469 9.855469 4.421875 9.855469 9.855469-4.421875 9.855469-9.855469 9.855469zm-7.5 22.917969c0 4.820312-3.921875 8.742187-8.746094 8.742187h-65.546875c-4.820312 0-8.742187-3.921875-8.742187-8.742187v-65.546876c0-4.824218 3.921875-8.746093 8.742187-8.746093h65.546875c4.824219 0 8.746094 3.921875 8.746094 8.746093v9.074219c-23.257813 7.410157-22.988281 40.070313 0 47.398438zm142.320313-68.640626c-.023438 5.414063-4.433594 9.808594-9.855469 9.808594-5.417969 0-9.828125-4.394531-9.851563-9.808594 1.234375-13.535156 18.523438-12.964843 19.707032 0zm-58.140626-59.449218c4.726563.726562 8.359376 4.820312 8.359376 9.742187 0 5.445313-4.429688 9.855469-9.855469 9.855469-5.4375 0-9.855469-4.421875-9.855469-9.855469 0-6.011719 5.371094-10.65625 11.351562-9.742187zm-68.003906-104.941406c-5.433594 0-9.855468-4.421876-9.855468-9.855469 0-5.433594 4.421874-9.855469 9.855468-9.855469s9.855469 4.421875 9.855469 9.855469c0 5.433593-4.417969 9.855469-9.855469 9.855469zm-49.015625 49.019531c-5.976562 0-10.664062-5.332031-9.742187-11.355469.722656-4.726562 4.816406-8.355469 9.742187-8.355469 5.429688 0 9.855469 4.414063 9.855469 9.851563s-4.421875 9.859375-9.855469 9.859375zm41.515625-26.101563c0 4.820313-3.921875 8.742188-8.746094 8.742188h-9.070312c-3.898438-12.175782-16.285156-19.382813-28.683594-16.851563-.105468.054688-14.050781 2.269531-18.714844 16.851563h-9.074218c-4.824219 0-8.746094-3.921875-8.746094-8.742188v-65.546875c0-4.820312 3.921875-8.746093 8.746094-8.746093h65.546875c4.820312 0 8.742187 3.925781 8.742187 8.746093v9.074219c-10.519531 3.351562-17.890625 13.394531-17.324218 24.953125.042968.101563.148437 16.96875 17.324218 22.445313zm172.042969-43.117187c5.421875 0 9.855469 4.410156 9.855469 9.855469 0 5.453124-4.441406 9.855468-9.855469 9.855468-5.433594 0-9.855469-4.421875-9.855469-9.855468 0-5.433594 4.421875-9.855469 9.855469-9.855469zm90.535156 42.628906c0 4.820313-3.921875 8.746094-8.742187 8.746094h-65.546875c-4.824219 0-8.746094-3.925781-8.746094-8.746094v-9.074219c10.71875-3.414062 17.902344-13.601562 17.324219-24.972656v-.003906c-.519532-10.3125-7.441406-19.273438-17.324219-22.421875v-9.074219c0-4.820312 3.921875-8.742188 8.746094-8.742188h65.546875c4.820312 0 8.742187 3.921876 8.742187 8.742188zm0 0" fill="#000000" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h6><span>03.</span> Desarrollo Frontend</h6>
+                        <h5 class="fw-2">Desarrollo de sitios frontend nativos.</h5>
+                        <p class="fw-0">Diseño y desarrollo de sitios web profesionales usando tecnologías Frontend como HTML, CSS y JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-secccion">
+            <div class="container" style="padding: 6em 0 6em;">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 my-3 aos-init" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="sm-title">
+                            <h4 class="font-alt">Educación</h4>
+                            <hr class="separador text-primary border border-primary mb-4" style="width: 15%;">
+                        </div>
+                        <ul class="aducation-box bg-primary text-white" style="padding: 1.5em; margin-right: 2em;">
+                            <li style="margin-left: 1.5em;">
+                                <span class="bg-info fw-0" style=" padding: 0.1em 1em; border-radius: 30px; font-size: 12px;">2021</span>
+                                <h6 class="mt-3 fw-2" style="font-size: 18px;">Diplomado en desarrollo web</h6>
+                                <p class="fw-0">Universidad Tecnológica de Pereira - MISIÓN TIC 2022</p>
+                            </li>
+                            <li style="margin-left: 1.5em;">
+                                <span class="bg-info fw-0" style=" padding: 0.1em 1em; border-radius: 30px; font-size: 12px;">2021 - Actualidad</span>
+                                <h6 class="mt-3 fw-2" style="font-size: 18px;">Ingeniería de Software</h6>
+                                <p class="fw-0">Politécnico Grancolombiano</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 my-3 aos-init" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+                        <div class="sm-title">
+                            <h4 class="font-alt">Experiencia</h4>
+                            <hr class="separador text-primary border border-primary mb-4" style="width: 10%;">
+                        </div>
+                        <ul class="experience-box bg-info text-white" style="padding: 1.5em; margin-right: 2em;">
+                            <li style="margin-left: 1.5em;">
+                                <span class="bg-primary fw-0" style=" padding: 0.1em 1em; border-radius: 30px; font-size: 12px;">2010-2012</span>
+                                <h6 class="mt-3 fw-2" style="font-size: 18px;">Diseñador y desarrollador WordPress</h6>
+                                <p class="fw-0"><a class="enlace-bg-black" href="https://www.qits.com.co" target="_blank">QITS.COM.CO</a></p>
+                            </li>
+                            <li style="margin-left: 1.5em;" class="seccion-disabled">
+                                <span class="bg-primary fw-0" style=" padding: 0.1em 1em; border-radius: 30px; font-size: 12px;">2010-2012</span>
+                                <h6 class="mt-3 fw-2" style="font-size: 18px;">Android Developer</h6>
+                                <p class="fw-0">Ketlimte Design Ltd.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 ml-auto my-3 aos-init" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="sm-title">
+                            <h4 class="font-alt">Habilidades</h4>
+                            <hr class="separador text-primary border border-primary mb-4" style="width: 10%;">
+                        </div>
+                        <ul class="aducation-box bg-secondary text-info" style="padding: 1.5em; margin-right: 2em;">
+                            <li style="margin-left: 1.5em;">
+                                <span class="fw-0 text-primary" style=" padding: 0; border-radius: 30px; font-size: 40px;"><i class="icono fab fa-wordpress"></i></span>
+                                <h6 class="mt-2 fw-2" style="font-size: 18px;">Wordpress</h6>
+                                <p class="fw-0">Junior</p>
+                            </li>
+                            <li style="margin-left: 1.5em;">
+                                <span class="fw-0 text-primary" style=" padding: 0; border-radius: 30px; font-size: 40px;">
+                                    <ul class="d-flex flex-wrap justify-content-start icons-seccion">
+                                        <li><i class="icono fab fa-html5"></i></li>
+                                        <li><i class="icono fab fa-css3 mx-3"></i></li>
+                                        <li><i class="icono fab fa-js"></i></li>
+                                    </ul>
+                                </span>
+                                <h6 class="mt-2 fw-2" style="font-size: 18px;">Html, CSS, JavasCript</h6>
+                                <p class="fw-0">Junior</p>
+                            </li>
+                            <li style="margin-left: 1.5em;">
+                                <span class="fw-0 text-primary" style=" padding: 0; border-radius: 30px; font-size: 40px;"><i class="icono fab fa-bootstrap"></i></span>
+                                <h6 class="mt-2 fw-2" style="font-size: 18px;">Bootstrap</h6>
+                                <p class="fw-0">Junior</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="portafolio" class="section bg-secondary seccion">
+        <div class="container" style="padding: 6em 0 6em;">
+            <div class="text-center" style="padding-bottom: 4em;">
+                <h1 class="text-info title-about fw-2">Portafolio</h1>
+                <hr class="separador text-primary border border-primary mb-4" style="width: 10%; margin: auto;">
+                <p style="width: 50%; margin: auto;" class="fw-0">Échale un vistazo a algunos de mis últimos trabajos</p>
+            </div>
+
+            <div class="pb-5 seccion-disabled">
+                <ul class="tabs-portafolio nav nav-pills text-info justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link fw-1 active" aria-current="page">All</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-info fw-1">Acerca de</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-info fw-1">Servicios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-info fw-1">Portafolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-info fw-1">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-info fw-1">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="http://peluqueria178.epizy.com/" target="_blank">App Peluquería</a>
+                                </h5>
+                                <span class="fw-0">Aplicación Web Básica</span>
+                            </div>
+                            <a href="http://peluqueria178.epizy.com/" class="gallery-link w-100" target="_blank">
+                                <img src="src/peluqueria.png" alt="Web Application" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="http://peluqueria178.epizy.com/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="http://bienesraices178.epizy.com/" target="_blank">Sitio de Bienes Raíces</a>
+                                </h5>
+                                <span class="fw-0">Sitio estático</span>
+                            </div>
+                            <a href="http://bienesraices178.epizy.com/" class="gallery-link w-100" target="_blank">
+                                <img src="src/bienesraices.png" alt="Web Application" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="http://bienesraices178.epizy.com/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="https://qits.com.co/" target="_blank">Web Application</a>
+                                </h5>
+                                <span class="fw-0">Behance Shot</span>
+                            </div>
+                            <a href="https://qits.com.co/" class="gallery-link w-100" target="_blank">
+                                <img src="src/qits.png" alt="Web Application" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="https://qits.com.co/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="https://www.plansforpermitsfl.com/" target="_blank">Plans For Permits Florida</a>
+                                </h5>
+                                <span class="fw-0">Sitio web</span>
+                            </div>
+                            <a href="https://www.plansforpermitsfl.com/" class="gallery-link w-100" target="_blank">
+                                <img src="src/plansforpermitsfl.png" alt="Web Application" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="https://www.plansforpermitsfl.com/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="https://hotelvillasofia.com.co/" target="_blank">Hotel Villa Sofía</a>
+                                </h5>
+                                <span class="fw-0">Sitio web</span>
+                            </div>
+                            <a href="https://hotelvillasofia.com.co/" class="gallery-link w-100" target="_blank">
+                                <img src="src/hotelvillasofia.png" alt="Web Application" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="https://hotelvillasofia.com.co/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="https://www.oftalmologiasalgado.com/" target="_blank">Web Application</a>
+                                </h5>
+                                <span class="fw-0">Behance Shot</span>
+                            </div>
+                            <a href="https://www.oftalmologiasalgado.com/" class="gallery-link w-100" target="_blank">
+                                <img src="src/oftalmologiasalgado.png" alt="Web Application" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="https://www.oftalmologiasalgado.com/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="testimonials container" data-bs-ride="true"  data-aos="fade-right" data-aos-duration="1000">
+        <div class="row" style="padding: 6em 0 6em; flex-wrap: nowrap;">
+            <div class="col-lg-6 d-flex m-4 flex-wrap">
+                <div class="img-testimonials col-md-4">
+                    <img src="src/testimonial porfile.jpg" alt="perfil">
+                </div>
+
+                <div class="col-md-8 pl-4 testimonials-info">
+                    <p class="fw-0">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    <h6 class="fw-2">Jara Afsari</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex m-4 flex-wrap">
+                <div class="img-testimonials col-md-4">
+                    <img src="src/testimonial porfile.jpg" alt="perfil">
+                </div>
+
+                <div class="col-md-8 pl-4 testimonials-info">
+                    <p class="fw-0">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    <h6 class="fw-2">Jara Afsari</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section bg-secondary seccion seccion-disabled">
+        <div class="container" style="padding: 6em 0 6em;">
+            <div class="text-center" style="padding-bottom: 4em;">
+                <h1 class="text-info title-about fw-2">Portafolio</h1>
+                <hr class="separador text-primary border border-primary mb-4" style="width: 10%; margin: auto;">
+                <p style="width: 50%; margin: auto;" class="fw-0">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="blog-post">
+                        <div class="blog-img">
+                            <div class="data">
+                                <span class="fw-3">14</span>
+                                <small class="fw-0">Jan</small>
+                            </div>
+                            <img src="src/blog-1.jpg" alt="blog post">
+                        </div>
+                        <div class="blog-info">
+                            <h6>I saw few die of hunger of eating, a hundred thousand.</h6>
+                            <p>Integer vitae mi libero. Aliquam consequat dolor libero, nec varius elit tempusporttitor.</p>
+                            <div class="btn-bar"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="blog-post">
+                        <div class="blog-img">
+                            <div class="data">
+                                <span class="fw-3">14</span>
+                                <small class="fw-0">Jan</small>
+                            </div>
+                            <img src="src/blog-1.jpg" alt="blog post">
+                        </div>
+                        <div class="blog-info">
+                            <h6>I saw few die of hunger of eating, a hundred thousand.</h6>
+                            <p>Integer vitae mi libero. Aliquam consequat dolor libero, nec varius elit tempusporttitor.</p>
+                            <div class="btn-bar"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="blog-post">
+                        <div class="blog-img">
+                            <div class="data">
+                                <span class="fw-3">14</span>
+                                <small class="fw-0">Jan</small>
+                            </div>
+                            <img src="src/blog-1.jpg" alt="blog post">
+                        </div>
+                        <div class="blog-info">
+                            <h6>I saw few die of hunger of eating, a hundred thousand.</h6>
+                            <p>Integer vitae mi libero. Aliquam consequat dolor libero, nec varius elit tempusporttitor.</p>
+                            <div class="btn-bar"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section after-left-section seccion">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 my-3">
+                    <div class="contct-form">
+                        <div class="sm-title title-form">
+                            <h4 class="font-alt">¿Qué Necesitas?</h4>
+                            <hr class="separador text-primary border border-primary mb-4 mt-0" style="width: 10%;">
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                                        <input type="text" class="form-control" placeholder="Nombre Completo" name="name" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50">
+                                        <input type="email" class="form-control" placeholder="Correo Electrónico" name="email" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                                        <input type="text" class="form-control" placeholder="Asunto" name="subject" id="subject" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                                        <textarea rows="4" class="form-control" placeholder="Mensaje" name="comment" id="comment"></textarea required>
+                                    </div>
+                                </div>
+                                <div class="col-12 aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                                    <div class="btn-bar">
+                                        <button type="submit" class="btn button-primary" style="width: 100%;">Enviar mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 ml-auto my-3 contacto-col-2">
+                    <div class="contact-info">
+                        <div class="sm-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                            <h4 class="font-alt">Contacto</h4>
+                            <hr class="separador text-primary border border-primary mb-4 mt-0" style="width: 10%;">
+                            <p class="fw-0">Formulario exclusivo para contacto profesional.</p>
+                        </div>
+                        <div class="media aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50">
+                            <div class="icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <span class="media-body fw-0">Duitama, <br>Boyacá - Colombia</span>
+                        </div>
+                        <div class="media aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                            <div class="icon">
+                                <i class="fas fa-at"></i>
+                            </div>
+                            <span class="media-body fw-0"><a href="mailto: contacto@juanvalderrama.com" target="_blank">contacto@juanvalderrama.com</a></span>
+                        </div>
+                        <div class="media aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <span class="media-body fw-0"><a href="tel: +573185007055" target="_blank">+57 318 500 7055</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-info container-fluid">
+        <div class="d-flex justify-content-between align-items-center py-3 my-0 container footer-flex">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-footer fw-0">© 2022 Company, <a href="#" class="fw-0">All rights reserved</a></span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex icons-footer">
+                <li class="ms-3">
+                    <a class="" href="https://github.com/juanchos0412" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="" href="https://www.linkedin.com/in/juan-sebastian-due%C3%B1as-3a5490199/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+  </body>
+</html>
