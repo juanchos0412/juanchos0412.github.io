@@ -627,7 +627,7 @@
                             <h4 class="font-alt">¿Qué Necesitas?</h4>
                             <hr class="separador text-primary border border-primary mb-4 mt-0" style="width: 10%;">
                         </div>
-                        <form>
+                        <form action="https://formsubmit.co/jvalderramaduenas@gmail.com" method="POST">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
@@ -646,9 +646,16 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                                        <textarea rows="4" class="form-control" placeholder="Mensaje" name="comment" id="comment"></textarea required>
+                                        <textarea rows="4" class="form-control" placeholder="Mensaje" name="comment" id="comment" required></textarea>
                                     </div>
                                 </div>
+                                <!-- tema del correo -->
+                                <input type="hidden" name="_template" value="box">
+                                <!-- respuesta automática -->
+                                <input type="hidden" name="_autoresponse" value="Tu solicitud de contacto a sido enviada correctamente, A continuaciónse musestran los datos recibidos.">
+
+                            <!-- redirigir a la página deagradecimiento -->
+                            <input type="hidden" name="_next" value="10.0.0.41:5500/gracias.html?name=value">
                                 <div class="col-12 aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                                     <div class="btn-bar">
                                         <button type="submit" class="btn button-primary" style="width: 100%;">Enviar mensaje</button>
@@ -675,7 +682,7 @@
                             <div class="icon">
                                 <i class="fas fa-at"></i>
                             </div>
-                            <span class="media-body fw-0"><a href="mailto: contacto@juanvalderrama.com" target="_blank">contacto@juanvalderrama.com</a></span>
+                            <span class="media-body fw-0"><a href="mailto: jvalderramaduenas@gmail.com" target="_blank">contacto@juanvalderrama.com</a></span>
                         </div>
                         <div class="media aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
                             <div class="icon">
