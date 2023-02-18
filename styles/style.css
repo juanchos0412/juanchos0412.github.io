@@ -34,7 +34,7 @@ html{
     --black: #101725;
 }
 
-html #servicios svg path{
+html #servicios svg path, html .skill-secccion svg path{
     color: var(--primary);
     fill: var(--primary);
 }
