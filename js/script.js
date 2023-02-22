@@ -10,8 +10,10 @@ window.onload = function (params) {
 
 //ocupar todo el alto de pantalla
 var header = document.getElementById("inicio");
+var video = document.getElementById("video");
 var height = window.innerHeight;
 header.style.height = height + "px";
+video.style.height = height + "px";
 
 //navegación pegajosa
 window.addEventListener("scroll", function(){
