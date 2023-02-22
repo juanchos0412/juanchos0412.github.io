@@ -10,7 +10,7 @@ window.onload = function (params) {
 
 //ocupar todo el alto de pantalla
 var header = document.getElementById("inicio");
-var video = document.getElementById("video");
+var video = document.getElementById("video-banner");
 var height = window.innerHeight;
 header.style.height = height + "px";
 video.style.height = height + "px";
@@ -44,6 +44,10 @@ const observer = new IntersectionObserver((entries) => {
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", function(){
         offCanvas.classList.remove("show");
+        const cuerpo = document.getElementById("body-portfolio");
+        console.log(cuerpo.style.overflow);
+        cuerpo.style.overflow = "scroll";
+        console.log("Nuevo overflow: " + cuerpo.style.overflow);
     })
 
     const hash = menuLink.getAttribute("href");

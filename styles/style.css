@@ -271,6 +271,21 @@ html .header .offcanvas .active{
     }
 }
 
+@media (max-width: 767px) {
+    .logo-default{
+        max-height: 50px !important;
+    }
+
+    .testimonial{
+        padding: 6em 0 0 0 !important;
+        margin: auto;
+    }
+
+    #contacto{
+        padding: 0 !important;
+    }
+}
+
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;

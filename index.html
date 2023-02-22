@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/other.css">
   </head>
-  <body class="container-fluid p-0">
+  <body class="container-fluid p-0" id="body-portfolio">
 
     <div id="contenedor-carga">
         <div id="carga"></div>
@@ -61,9 +61,6 @@
                     </li>
                     <li class="nav-item text-white text-center">
                         <a class="nav-link fw-0 text-white text-center" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li class="nav-item text-white text-center seccion-disabled">
-                        <a class="nav-link fw-0 text-white text-center" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item text-white text-center">
                         <a class="nav-link fw-0 text-white text-center" href="#contacto">Contacto</a>
@@ -512,7 +509,7 @@
                         <div class="portafolio-img">
                             <div class="portafolio-info" style="padding-bottom: 1.5em;">
                                 <h5>
-                                    <a href="https://github.com/juanchos0412/app-salon-de-belleza" target="_blank">App Peluquería</a>
+                                    <a href="https://app-salonbelleza.netlify.app/" target="_blank">App Peluquería</a>
                                 </h5>
                                 <span class="fw-0">Aplicación Web Básica para la creación de citas.</span>
                                 <span class="fw-0">
@@ -535,10 +532,85 @@
                                     </ul>
                                 </span>
                             </div>
-                            <a href="https://github.com/juanchos0412/app-salon-de-belleza" class="gallery-link w-100" target="_blank">
+                            <a href="https://app-salonbelleza.netlify.app/" class="gallery-link w-100" target="_blank">
                                 <img src="src/peluqueria.png" alt="App peluquería" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
                             </a>
-                            <a href="https://github.com/juanchos0412/app-salon-de-belleza" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                            <a href="https://app-salonbelleza.netlify.app/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 item-portafolio aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portafolio-container" style="padding: 1.5em;">
+                        <div class="portafolio-img">
+                            <div class="portafolio-info" style="padding-bottom: 1.5em;">
+                                <h5>
+                                    <a href="https://maquetado-licktech.netlify.app/" target="_blank">Sitio web licktech</a>
+                                </h5>
+                                <span class="fw-0">Sitio web estatico acerca de tecnología.</span>
+                                <span class="fw-0">
+                                    <ul class="d-flex flex-wrap justify-content-start icons-seccion mt-3">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height: 25px; width: auto;" xml:space="preserve">
+                                                <g><path d="m32 0 40.8 460.8L256 512l183.136-51.168L480 0z"  fill="#ff5722" data-original="#ff5722"></path><path d="M391.52 150.688H176.8l5.12 57.888H386.4l-15.392 173.568L256 414.24l-.096.032-114.944-32.128-8.032-90.784h56.32l4.192 47.104 62.496 16.992.064-.032 62.56-16.992 6.528-73.312H130.624L115.456 94.208H396.512z"  fill="#fafafa" data-original="#fafafa"></path></g>
+                                            </svg>
+                                        </li>
+                                        <li class="mx-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height: 25px; width: auto;" xml:space="preserve">
+                                                <g><path d="m32 0 40.8 460.8L256 512l183.136-51.168L480 0z"  fill="#2196f3" data-original="#2196f3"></path><path d="m392.768 150.688-5.152 57.888-15.552 173.536L256 414.208l-.096.032-116-32.128-8.096-90.752h56.832l4.224 47.072 63.072 17.024.032-.032 63.168-17.024 8.608-78.432-198.656.544-5.632-53.632 209.056-2.464 4.224-57.408-218.88.608-3.68-53.408h283.648z"  fill="#fafafa" data-original="#fafafa"></path></g>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height: 25px; width: auto;" xml:space="preserve">
+                                                <g><path fill="#ffdf00" d="M0 0h512v512H0z" data-original="#ffdf00"></path><path d="M343.934 400.002c10.313 16.839 23.731 29.216 47.462 29.216 19.935 0 32.67-9.964 32.67-23.731 0-16.498-13.084-22.341-35.027-31.939l-12.028-5.161c-34.719-14.791-57.783-33.321-57.783-72.493 0-36.084 27.494-63.553 70.461-63.553 30.59 0 52.582 10.646 68.429 38.522l-37.465 24.056c-8.249-14.791-17.148-20.618-30.964-20.618-14.092 0-23.024 8.94-23.024 20.618 0 14.434 8.94 20.277 29.582 29.217l12.028 5.152c40.879 17.53 63.959 35.401 63.959 75.581 0 43.317-34.028 67.048-79.726 67.048-44.682 0-73.549-21.293-87.674-49.201zm-169.96 4.169c7.558 13.41 14.434 24.747 30.964 24.747 15.807 0 25.779-6.185 25.779-30.232V235.089h48.112v164.246c0 49.818-29.208 72.493-71.843 72.493-38.522 0-60.83-19.936-72.176-43.947z" fill="#000000" data-original="#000000"></path></g>
+                                            </svg>
+                                        </li> 
+                                        <li class="mx-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height: 30px; width: auto;" xml:space="preserve">
+                                                <g><path fill="#001834" d="M90.667 6.4h330.667C471.467 6.4 512 46.933 512 97.067v317.867c0 50.133-40.533 90.667-90.667 90.667H90.667C40.533 505.6 0 465.067 0 414.933V97.067C0 46.933 40.533 6.4 90.667 6.4z" data-original="#001834"></path><g fill="#00a9ff"><path d="M115.2 356.48V136.96c0-1.493.64-2.347 2.133-2.347 3.627 0 7.04 0 11.947-.213 5.12-.213 10.453-.213 16.213-.427s11.947-.213 18.56-.427c6.613-.213 13.013-.213 19.413-.213 17.493 0 32 2.133 43.947 6.613 10.667 3.627 20.48 9.6 28.587 17.493 6.827 6.827 12.16 15.147 15.573 24.32 3.2 8.96 4.907 18.133 4.907 27.733 0 18.347-4.267 33.493-12.8 45.44s-20.48 20.907-34.347 26.027c-14.507 5.333-30.507 7.253-48 7.253-5.12 0-8.533 0-10.667-.213-2.133-.213-5.12-.213-9.173-.213v68.48c.213 1.493-.853 2.773-2.347 2.987H117.76c-1.707 0-2.56-.853-2.56-2.773zm46.507-180.693v71.68c2.987.213 5.76.427 8.32.427h11.307c14.731 0 31.744-3.462 42.026-15.146 8.849-10.056 8.874-29.998 1.707-40.96-8.508-13.013-25.522-16.783-40.107-16.427-5.547 0-10.453 0-14.507.213-4.266-.214-7.253-.001-8.746.213zM409.6 234.453c-6.4-3.413-13.227-5.76-20.48-7.253-7.893-1.707-15.787-2.773-23.893-2.773-4.267-.213-8.747.427-12.8 1.493-2.773.64-5.12 2.133-6.613 4.267-1.067 1.707-1.707 3.84-1.707 5.76s.853 3.84 2.133 5.547c1.92 2.347 4.48 4.267 7.253 5.76 4.907 2.56 10.027 4.907 15.147 7.04 11.52 3.84 22.613 9.173 32.853 15.573 7.04 4.48 12.8 10.453 16.853 17.707 3.413 6.827 5.12 14.293 4.907 21.973.213 10.027-2.773 20.053-8.32 28.373-5.973 8.533-14.293 15.147-23.893 18.987-10.453 4.48-23.253 6.827-38.613 6.827-9.813 0-19.413-.853-29.013-2.773a86.055 86.055 0 0 1-21.76-6.827c-1.493-.853-2.56-2.347-2.347-4.053v-37.12c0-.64.213-1.493.853-1.92s1.28-.213 1.92.213c8.32 4.907 17.067 8.32 26.453 10.453 8.107 2.133 16.64 3.2 25.173 3.2 8.107 0 13.867-1.067 17.707-2.987 3.413-1.493 5.76-5.12 5.76-8.96 0-2.987-1.707-5.76-5.12-8.533s-10.453-5.973-20.907-10.027c-10.88-3.84-20.907-8.96-30.293-15.36-6.613-4.693-12.16-10.88-16.213-18.133-3.413-6.827-5.12-14.293-4.907-21.76 0-9.173 2.56-17.92 7.253-25.813 5.333-8.533 13.227-15.36 22.4-19.627 10.027-5.12 22.613-7.467 37.76-7.467 8.747 0 17.707.64 26.453 1.92 6.4.853 12.587 2.56 18.347 4.907.853.213 1.707 1.067 2.133 1.92.213.853.427 1.707.427 2.56v34.773c0 .853-.427 1.707-1.067 2.133-1.919.427-2.986.427-3.839 0z" fill="#00a9ff" data-original="#00a9ff"></path></g></g>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512; height: 30px; width: auto;" xml:space="preserve">
+                                                <style type="text/css">
+                                                    .st0{fill:#027e9d;}
+                                                    .st1{fill:#FFFFFF !important;}
+                                                </style>
+                                                <g>
+                                                    <circle class="st0" cx="50" cy="51" r="49"/>
+                                                    <path class="st1" d="M62.7,59.2c-2,2.2-4.8,3.3-6.1,3.3c-1.5,0-2.3-0.9-2.5-2.3c-0.1-0.5,0-1.1,0.1-1.6c0.5-3.1,1.6-5.1,1.6-5.6
+                                                        c0-0.2-0.1-0.3-0.2-0.3c-1,0-4.4,3.5-4.9,5.8l-0.4,1.9c-0.3,1.3-1.5,2.1-2.4,2.1c-0.4,0-0.7-0.2-0.8-0.7c0-0.2,0-0.4,0-0.6l0.2-1
+                                                        c-1.8,1.4-3.8,2.3-4.7,2.3c-1.3,0-2-0.7-2.2-1.7c-0.8,1.1-1.9,1.7-3.1,1.7c-1.5,0-2.9-1-3.6-2.5c-1,1.1-2.2,2.2-3.6,3.1
+                                                        c-2.1,1.3-4.4,2.4-7.1,2.4c-2.5,0-4.7-1.3-5.8-2.4c-1.8-1.6-2.7-4.1-3-6.3c-0.9-7,3.4-16.3,10.1-20.3c1.5-0.9,3.2-1.4,4.8-1.4
+                                                        c3.2,0,5.6,2.3,5.9,5c0.3,2.5-0.7,4.6-3.4,5.9c-1.4,0.7-2.1,0.7-2.3,0.3c-0.1-0.2-0.1-0.6,0.2-0.8c2.6-2.1,2.6-3.9,2.3-6.4
+                                                        c-0.2-1.6-1.2-2.6-2.4-2.6C24.2,36.5,17,47.8,18,56c0.4,3.2,2.4,6.9,6.4,6.9c1.3,0,2.8-0.4,4-1c2.2-1.1,3.5-2,4.7-3.5
+                                                        c-0.3-3.8,3-8.6,7.8-8.6c2.1,0,3.8,0.8,4,2.5c0.3,2.1-1.5,2.5-2.2,2.5c-0.6,0-1.5-0.2-1.6-0.7c-0.1-0.6,1.3-0.3,1.1-1.6
+                                                        c-0.1-0.8-1-1.1-1.8-1.1c-3,0-4.7,4.2-4.4,6.8c0.1,1.2,0.8,2.4,1.8,2.4c0.9,0,2.2-1.3,2.6-3.1c0.3-1.3,1.5-2.1,2.4-2.1
+                                                        c0.5,0,0.8,0.2,0.8,0.7c0,0.2,0,0.4,0,0.6c-0.1,0.5-0.5,2.4-0.5,2.7c0,0.3,0.2,0.8,0.8,0.8c0.5,0,2.1-0.9,3.7-2.3
+                                                        c0.5-2.5,1.1-5.6,1.1-5.8c0.2-1,0.6-2.1,2.6-2.1c0.4,0,0.7,0.2,0.8,0.7c0,0.2,0,0.4,0,0.6L51.6,54c1.8-2.4,4.6-4.2,6.3-4.2
+                                                        c0.7,0,1.3,0.4,1.4,1.1c0.1,0.4-0.1,1.1-0.3,1.9c-0.6,1.6-1.3,4.1-1.7,6.2c-0.1,0.5,0.1,1.1,0.9,1.1c0.7,0,2.8-0.8,4.5-3.1
+                                                        c0-0.3,0-0.6,0-1c0-1.8,0.1-3.2,0.5-4.3c0.3-1.1,1.7-2.1,2.6-2.1c0.5,0,0.8,0.3,0.8,0.8c0,0.2,0,0.4-0.1,0.6c-0.6,1.9-1,3.6-1,5.3
+                                                        c0,1,0.2,2.5,0.4,3.3c0,0.2,0.1,0.3,0.3,0.3c0.3,0,2.3-1.9,3.7-4.3c-1.3-0.8-2-2.3-2-4.1c0-3,1.8-4.6,3.6-4.6c1.4,0,2.6,1,2.6,3
+                                                        c0,1.3-0.5,2.7-1.2,4.1c0,0,0.3,0,0.4,0c1.1,0,1.9-0.5,2.4-1.1c0.2-0.2,0.4-0.4,0.6-0.5c1.4-1.7,3.5-2.9,5.9-2.9
+                                                        c2.1,0,3.8,0.8,4,2.5c0.3,2.1-1.6,2.6-2.2,2.6c-0.6,0-1.6-0.2-1.6-0.7c-0.1-0.5,1.3-0.3,1.2-1.6c-0.1-0.8-1-1.2-1.8-1.2
+                                                        c-2.8,0-4.7,3.7-4.4,6.8c0.1,1.2,0.7,2.4,1.8,2.4c0.9,0,2.2-1.3,2.7-3.1c0.3-1.2,1.5-2.1,2.4-2.1c0.4,0,0.8,0.2,0.8,0.7
+                                                        c0,0.3-0.1,0.8-0.5,2.8c-0.2,0.8-0.2,1.6-0.2,2.1c0.2,1.2,0.7,2,1.2,2.5c0.2,0.2,0.3,0.4,0.3,0.5c0,0.3-0.2,0.6-0.6,0.6
+                                                        c-0.1,0-0.3,0-0.4-0.1c-2.2-0.9-3.1-2.4-3.3-3.7c-0.8,1.1-1.9,1.6-3.1,1.6c-1.9,0-3.8-1.7-4.1-3.9c-0.1-0.9,0-1.9,0.3-2.8
+                                                        c-0.8,0.5-1.6,0.8-2.4,0.8c-0.3,0-0.5,0-0.7,0c-1.9,2.7-3.9,4.6-5.4,5.5c-0.6,0.3-1.2,0.5-1.6,0.5c-0.3,0-0.7-0.1-0.9-0.4
+                                                        C63.1,61.4,62.8,60.4,62.7,59.2L62.7,59.2z M69.5,50.2c0,1.2,0.6,2.4,1.3,3.2c0.3-0.8,0.5-1.6,0.5-2.4c0-1.5-0.6-2.2-1-2.2
+                                                        C69.7,48.8,69.5,49.6,69.5,50.2z"/>
+                                                </g>
+                                                                                            </svg>
+                                        </li>             
+                                    </ul>
+                                </span>
+                            </div>
+                            <a href="https://maquetado-licktech.netlify.app/" class="gallery-link w-100" target="_blank">
+                                <img src="src/licktech.png" alt="App peluquería" srl_elementid="0" style="width: 100%; max-height: 400px; object-fit: cover; object-position: top;">
+                            </a>
+                            <a href="https://maquetado-licktech.netlify.app/" class="portfolio-icon" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-link"></i>
                             </a>
                         </div>
@@ -720,7 +792,7 @@
     </section>
 
     <section class="testimonials container" data-bs-ride="true"  data-aos="fade-right" data-aos-duration="1000">
-        <div class="row justify-content-center" style="padding: 6em 0 6em; flex-wrap: nowrap;">
+        <div class="row justify-content-center testimonial" style="padding: 6em 0 6em; flex-wrap: nowrap;">
             <div class="col-lg-8 d-flex m-4 flex-wrap">
                 <div class="img-testimonials col-md-4 d-inline-flex justify-content-end">
                     <img src="https://media.licdn.com/dms/image/C4E03AQFlnspF5sS9Lw/profile-displayphoto-shrink_200_200/0/1538779746467?e=1681948800&v=beta&t=G0vv9t6deR_DrwQFk2lr9-Ssx6Jumrc6d2-laDe07Pc" alt="perfil">
@@ -731,69 +803,6 @@
                     <h6 class="fw-2">Jose Ignacio Dueñas Alonso - Gerente qits.com.co</h6>
                     <h6 class="fw-1" style="font-size: 1em;">PHP Senior | Webmaster | Digital Strategy Consultant | SEO</h6>
                     
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="section bg-secondary seccion seccion-disabled">
-        <div class="container" style="padding: 6em 0 6em;">
-            <div class="text-center" style="padding-bottom: 4em;">
-                <h1 class="text-info title-about fw-2">Portafolio</h1>
-                <hr class="separador text-primary border border-primary mb-4" style="width: 10%; margin: auto;">
-                <p style="width: 50%; margin: auto;" class="fw-0">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
-                    <div class="blog-post">
-                        <div class="blog-img">
-                            <div class="data">
-                                <span class="fw-3">14</span>
-                                <small class="fw-0">Jan</small>
-                            </div>
-                            <img src="src/blog-1.jpg" alt="blog post">
-                        </div>
-                        <div class="blog-info">
-                            <h6>I saw few die of hunger of eating, a hundred thousand.</h6>
-                            <p>Integer vitae mi libero. Aliquam consequat dolor libero, nec varius elit tempusporttitor.</p>
-                            <div class="btn-bar"><a href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
-                    <div class="blog-post">
-                        <div class="blog-img">
-                            <div class="data">
-                                <span class="fw-3">14</span>
-                                <small class="fw-0">Jan</small>
-                            </div>
-                            <img src="src/blog-1.jpg" alt="blog post">
-                        </div>
-                        <div class="blog-info">
-                            <h6>I saw few die of hunger of eating, a hundred thousand.</h6>
-                            <p>Integer vitae mi libero. Aliquam consequat dolor libero, nec varius elit tempusporttitor.</p>
-                            <div class="btn-bar"><a href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
-                    <div class="blog-post">
-                        <div class="blog-img">
-                            <div class="data">
-                                <span class="fw-3">14</span>
-                                <small class="fw-0">Jan</small>
-                            </div>
-                            <img src="src/blog-1.jpg" alt="blog post">
-                        </div>
-                        <div class="blog-info">
-                            <h6>I saw few die of hunger of eating, a hundred thousand.</h6>
-                            <p>Integer vitae mi libero. Aliquam consequat dolor libero, nec varius elit tempusporttitor.</p>
-                            <div class="btn-bar"><a href="#">Read More</a></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
