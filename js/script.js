@@ -8,6 +8,15 @@ window.onload = function (params) {
     contenedor.style.display = 'none';
 }
 
+//ocupar todo el alto de pantalla
+var header = document.getElementById("inicio");
+$(document).ready(function(){
+
+    var height = $(window).height();
+
+    $('#inicio').height(height);
+});
+
 //navegación pegajosa
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".main-menu")
