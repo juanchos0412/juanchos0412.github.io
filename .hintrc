@@ -3,6 +3,15 @@
     "development"
   ],
   "hints": {
-    "typescript-config/strict": "off"
+    "typescript-config/strict": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off",
+    "scoped-svg-styles": "off",
+    "no-inline-styles": "off"
   }
 }
