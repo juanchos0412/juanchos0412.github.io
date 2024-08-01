@@ -1,0 +1,91 @@
+---
+import GlobalLayout from "../layouts/GlobalLayout.astro"
+import About from "../components/About.astro"
+import Services from "../components/Services.astro"
+import Skills from "../components/Skills.astro"
+import Portfolio from "../components/Portfolio.astro"
+import Contact from "../components/Contact.astro"
+
+//traducciones
+const metatitle = 'Juan Valderrama - Desarrollador WordPress'
+const metadescription = 'Desarrollador web con más de 3 años de experiencia en sitios web profesionales y marketing digital. Especializado en WordPress, entrego proyectos de alta calidad a tiempo y dentro del presupuesto. Busco oportunidades en empresas innovadoras que valoren la excelencia en desarrollo web y marketing digital. Contáctame para colaborar con un profesional motivado y apasionado.'
+const roles = ["Desarrollador Web", "Desarrollador UI/UX", "Desarrollador Frontend"]
+
+
+//about
+const cargo = `Ingeniero de <span class="text-primary">Software</span>`;
+const pone = "Soy un desarrollador web con más de 3 años de experiencia en sitios profesionales y estrategias de marketing digital. Especializado en WordPress, aplico tecnologías avanzadas para asegurar calidad en diseño y funcionalidad."
+const ptwo = "Destaco por mi habilidad para trabajar en equipo, adaptarme a nuevos desafíos y aprender continuamente. Mi experiencia abarca desde pequeñas empresas hasta grandes corporaciones, y busco oportunidades en empresas que valoren la innovación, el trabajo en equipo y la excelencia."
+
+//services
+const subtitle = "Diseño y desarrollo sitios con enfoque profesional, diseños agradables y buenas técnicas de desarrollo Web."
+
+const services = {
+  responsive: {
+    svg: './src/responsive.svg',
+    titulo: '01. Diseño Responsive',
+    subtitulo: 'Diseño adaptado a dispositivos móviles',
+    desc: 'Desarrollo de sitios con adaptabilidad para variedad de dispositivos, ya sea celulares, tabletas o computadores de escritorio.'
+  },
+  websites: {
+    svg: './src/websites.svg',
+    titulo: '02. Sitios Web en WordPress',
+    subtitulo: 'Diseño y desarrollo de sitios en Wordpress',
+    desc: 'Sitios web modernos y rápidos, con enfoque profesional, usando el gestor de contenidos más popular de la web.'
+  },
+  frontend: {
+    svg: './src/frontend.svg',
+    titulo: '03. Desarrollo Frontend',
+    subtitulo: 'Desarrollo de sitios frontend nativos',
+    desc: 'Diseño y desarrollo de sitios web profesionales usando tecnologías Frontend como Astro.'
+  },
+  content: {
+    svg: './src/content.svg',
+    titulo: '04.Content manager',
+    subtitulo: 'Creación de contenido para redes sociales',
+    desc: 'Creación de infografías, edición de imágenes, creción de videos informativos.'
+  },
+  seo: {
+    svg: './src/seo.svg',
+    titulo: '05. Estrategias SEO',
+    subtitulo: 'Desarrollo de mejoras en pocisionamiento web',
+    desc: 'Conocimientos en estrategias y buenas practicas SEO para mejorar el pocisionamiento de sitios web en buscadores.'
+  },
+  tiendas: {
+    svg: './src/tiendas.svg',
+    titulo: '06. Tiendas virtuales en Woocommerce',
+    subtitulo: 'Desarrollo de tiendas virtuales en Woocommerce',
+    desc: 'Tiendas virtuales modernas y rápidas, con enfoque profesional, usando el gestor de contenidos más popular de la web.'
+  }
+};
+
+//skills
+const educations ={
+  diplomado: {
+    duracion: '2021',
+    titulo: 'Diplomado en desarrollo web',
+    academia: 'Universidad Tecnológica de Pereira - MISIÓN TIC 2022'
+  },
+  uni: {
+    duracion: '2021 - Actualidad',
+    titulo: 'Ingeniería de Software',
+    academia: 'Politécnico Grancolombiano'
+  }
+}
+
+const experiences ={
+  qits: {
+    duracion: 'Mar 2021 - Jul 2024',
+    titulo: 'Diseñador y desarrollador WordPress',
+    empresa: 'QITS.COM.CO'
+  }
+}
+---
+
+<GlobalLayout metatitle={metatitle} metadesscription={metadescription} home="Inicio" acercade="Acerca De" servicios="Servicios" portafolio="Portaflio" contacto="Contacto" lenguaje='en' aLenguaje="/en" roles={roles} subject="Soy" copyone="Desarrollado con" copytwo="por">
+  <About cargo={cargo} pone={pone} ptwo={ptwo} nombre="Nombre" nacido="Nacido en" Dcv="Descargar CV" lenguaje="es"/>
+  <Services titulo="Mis Especializaciones" subtitle={subtitle} services={services} />
+  <Skills educacion="Educación" experencia="Experencia" habilidades="Habilidades" educations={educations} experiences={experiences}/>
+  <Portfolio />
+  <Contact />
+</GlobalLayout>

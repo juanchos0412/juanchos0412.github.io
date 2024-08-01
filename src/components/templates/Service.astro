@@ -1,0 +1,18 @@
+---
+const { svg, titulo, subtitulo, desc } = Astro.props;
+---
+<div
+  class="col-sm-6 col-lg-4 aos-init aos-animate"
+  data-aos="fade-right"
+  data-aos-duration="1200"
+  data-aos-delay="150"
+>
+  <div class="bg-white card-service">
+    <div class="icon">
+      <img src={svg} alt={titulo}>
+    </div>
+    <h6>{titulo}</h6>
+    <h5 class="fw-2">{subtitulo}</h5>
+    <p class="fw-0">{desc}</p>
+  </div>
+</div>

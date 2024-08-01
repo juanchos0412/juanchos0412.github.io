@@ -1,0 +1,9 @@
+---
+const { duracion, titulo, empresa} = Astro.props;
+---
+
+<li style="margin-left: 1.5em;">
+  <span class="bg-primary fw-0" style=" padding: 0.1em 1em; border-radius: 30px; font-size: 12px;">{duracion}</span>
+  <h6 class="mt-3 fw-2" style="font-size: 18px;">{titulo}</h6>
+  <p class="fw-0"><a class="enlace-bg-black" href="https://www.qits.com.co" target="_blank">{empresa}</a></p>
+</li>
